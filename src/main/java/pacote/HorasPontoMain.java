@@ -23,7 +23,7 @@ public class HorasPontoMain {
 	
 	
 	public static void main(String[] args) throws InterruptedException {
-		abrirPagina("http://gestao172.stefanini.com:9000/management/login");
+		abrirPagina("www.site.com");
 		Thread.sleep(1000);
 		logarSite();
 		
@@ -51,7 +51,7 @@ public class HorasPontoMain {
 	
 	private static void lancarHora(String hora) throws InterruptedException {
 		Thread.sleep(1000);
-		driver.get("http://gestao172.stefanini.com:9000/management/timesheets?form");
+		driver.get("www.site.com/proximapagina");
 		Thread.sleep(1000);
 		
 		driver.findElement(By.id("_workHours_id")).sendKeys("8");
